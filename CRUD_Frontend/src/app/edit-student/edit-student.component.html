@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <h2>Edit Student</h2>
+    
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="row mt-2 d-flex">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" [(ngModel)]="student.name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" [(ngModel)]="student.email" required>
+        </div>
+      </div>
+  
+      <div class="row mt-2 d-flex">
+        <div class="form-group col-md-6">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age" [(ngModel)]="student.age" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phone">Phone</label>
+          <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter Phone" [(ngModel)]="student.phone" required>
+        </div>
+      </div>
+  
+      <div class="row mt-2 d-flex">
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary btn-sm me-2">Save</button>
+          <button type="reset" class="btn btn-secondary btn-sm">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

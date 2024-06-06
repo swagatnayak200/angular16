@@ -1,0 +1,16 @@
+/* edit-student.component.css or studentlist.component.css */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.btn {
+    width: 80px;
+}
